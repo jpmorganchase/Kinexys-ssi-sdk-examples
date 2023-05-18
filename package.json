@@ -1,0 +1,43 @@
+{
+  "name": "ssi-examples",
+  "version": "1.0.0",
+  "description": "This repo has running code which you can execute to help you understadn how to use the ssi-sdk.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "create:keypair": "ts-node ./src/holder/create-keypair.ts",
+    "create:issuer:did:key": "ts-node ./src/issuer/create-issuer-did.ts",
+    "create:issuer:did:ethr": "ts-node ./src/issuer/create-issuer-ethr.ts",
+    "create:vc": "ts-node ./src/issuer/create-vc.ts",
+    "create:vc:did:ethr": "ts-node ./src/issuer/create-vc-did-ethr.ts",
+    "create:vc:schema:validation": "ts-node ./src/issuer/create-vc-schema-validation.ts",
+    "create:vc:with:additional:params": "ts-node ./src/issuer/create-vc-with-additional-params.ts",
+    "sign:vc": "ts-node ./src/issuer/sign-vc.ts",
+    "create:sign:vc": "ts-node ./src/issuer/create-and-sign-vc.ts",
+    "deactivate:vc": "ts-node ./src/issuer/deactivate-vc.ts",
+    "create:vp": "ts-node ./src/holder/create-vp-from-vc.ts",
+    "create:sign:vp": "ts-node ./src/holder/create-and-sign-vp.ts",
+    "create:vp:with:additional:params": "ts-node ./src/holder/create-vp-with-additional-params.ts",
+    "sign:vp": "ts-node ./src/holder/sign-vp.ts",
+    "verify": "ts-node ./src/verifier/verify.ts",
+    "verify:dates": "ts-node ./src/verifier/verify-dates.ts",
+    "verify:revocation:status": "ts-node ./src/verifier/verify-revocation-status.ts",
+    "verify:schema:validation": "ts-node ./src/verifier/verify-schema-validation.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.16.1",
+    "@typescript-eslint/eslint-plugin": "^5.59.1",
+    "@typescript-eslint/parser": "^5.59.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "@inprd/ssi": "^1.0.6",
+    "@types/lodash": "^4.14.194",
+    "dotenv": "^16.0.3",
+    "ethers": "^5.7.2",
+    "lodash": "^4.17.21"
+  }
+}
