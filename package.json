@@ -1,8 +1,14 @@
 {
-  "name": "ssi-examples",
-  "version": "1.0.0",
-  "description": "This repo has running code which you can execute to help you understadn how to use the ssi-sdk.",
+  "name": "@jpmorganchase/onyx-ssi-sdk-examples",
+  "version": "0.0.1",
+  "description": "This repo has running code which you can execute to help you understand how to use the onyx-ssi-sdk.",
+  "license": "Apache-2.0",
+  "private": true,
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jpmorganchase/onyx-ssi-sdk-examples"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "create:keypair": "ts-node ./src/holder/create-keypair.ts",
@@ -25,7 +31,6 @@
     "verify:schema:validation": "ts-node ./src/verifier/verify-schema-validation.ts"
   },
   "author": "",
-  "license": "ISC",
   "devDependencies": {
     "@types/node": "^18.16.1",
     "@typescript-eslint/eslint-plugin": "^5.59.1",
