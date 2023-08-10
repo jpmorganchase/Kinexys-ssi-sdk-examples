@@ -41,7 +41,7 @@ To run the examples in this repository, you need:
 - Node.js v16 or higher installed on your system.
 - A basic understanding of TypeScript.
 - A configured `.env` file. You'll find a `.env.example` in the root of this project, which outlines the necessary environment variables.
-- Optional but highly encourged to get fimilar with [Onyx SSI SDK](https://github.com/jpmorganchase/onyx-ssi-sdk) and the broader SSI Ecosystem.
+- Optional but highly encouraged to get familiar with [Onyx SSI SDK](https://github.com/jpmorganchase/onyx-ssi-sdk) and the broader SSI Ecosystem.
 
 ## Getting Started
 
@@ -58,7 +58,7 @@ To run the examples in this repository, you need:
    Enter the root directory of the cloned repository with:
 
    ```
-   cd onyx-ssi-examples
+   cd onyx-ssi-sdk-examples
    ```
 
 3. **Configure Environment Variables**
