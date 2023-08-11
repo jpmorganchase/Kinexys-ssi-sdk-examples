@@ -35,7 +35,7 @@ const createVc = async () => {
     id: vcDidKey,
   };
 
-  console.log(`\nGenerating Verifiable Cridential of type ${credentialType}\n`);
+  console.log(`\nGenerating Verifiable Credential of type ${credentialType}\n`);
 
   const vc = createCredential(
     issuerDidWithKeys.did,
