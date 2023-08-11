@@ -72,7 +72,7 @@ const signVp = async () => {
         );
       } else {
         console.log(
-          "\nHOLDER_EDDSA_PRIVATE_KEY cannot sign this verifiable credentail\n"
+          "\nHOLDER_EDDSA_PRIVATE_KEY cannot sign this verifiable credential\n"
         );
       }
     }
