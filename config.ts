@@ -40,7 +40,7 @@ export const VC_DIR_PATH =
 export const VC = getParam("VC");
 export const VC_ES256K_PRIVATE_KEY = getParam("VC_ES256K_PRIVATE_KEY");
 
-//VP congifs
+//VP configs
 export const VP_DIR_PATH =
   getParam("VP_DIR_PATH") || "./src/verifiable_presentation";
 export const VP = getParam("VP");
