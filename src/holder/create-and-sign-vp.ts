@@ -57,7 +57,7 @@ const createAndSignVp = async () => {
           );
         } else {
           console.log(
-            "HOLDER_ES256K_PRIVATE_KEY cannot sign this verifiable credentail\n"
+            "HOLDER_ES256K_PRIVATE_KEY cannot sign this verifiable credential\n"
           );
         }
       } else if (includes(signedVc.sub, "key")) {
@@ -87,7 +87,7 @@ const createAndSignVp = async () => {
     } catch (err) {
       console.log("\nFailed to fetch file\n");
       console.log(
-        "\nTo run this script you must have a valid VC and a vaild signed VC JWT\n"
+        "\nTo run this script you must have a valid VC and a valid signed VC JWT\n"
       );
       console.log(
         "\nPlease refer to issuer scripts to generate and sign a VC\n"
@@ -96,7 +96,7 @@ const createAndSignVp = async () => {
   } else {
     console.log("\nVC not found!\n");
     console.log(
-      "\nTo run this script you must have a valid VC and a vaild signed VC JWT\n"
+      "\nTo run this script you must have a valid VC and a valid signed VC JWT\n"
     );
     console.log("\nPlease refer to issuer scripts to generate and sign a VC\n");
   }
