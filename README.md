@@ -58,7 +58,7 @@ To run the examples in this repository, you need:
    Enter the root directory of the cloned repository with:
 
    ```
-   cd onyx-ssi-examples
+   cd onyx-ssi-sdk-examples
    ```
 
 3. **Configure Environment Variables**
