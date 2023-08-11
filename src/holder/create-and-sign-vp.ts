@@ -25,7 +25,7 @@ const createAndSignVp = async () => {
 
   if (VC) {
     try {
-      console.log("\nReading a existing signed VC JWT\n");
+      console.log("\nReading an existing signed VC JWT\n");
       const signedVcJwt = fs.readFileSync(
         path.resolve(VC_DIR_PATH, `${camelCase(VC)}.jwt`),
         "utf8"
@@ -80,7 +80,7 @@ const createAndSignVp = async () => {
           );
         } else {
           console.log(
-            "\nHOLDER_EDDSA_PRIVATE_KEY cannot sign this verifiable credentail\n"
+            "\nHOLDER_EDDSA_PRIVATE_KEY cannot sign this verifiable credential\n"
           );
         }
       }
