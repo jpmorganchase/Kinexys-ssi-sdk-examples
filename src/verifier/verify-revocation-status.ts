@@ -21,7 +21,7 @@ const verificationWithRevocationStatus = async () => {
 
   if (VP) {
     try {
-      console.log("\nReading a existing signed VP JWT\n");
+      console.log("\nReading an existing signed VP JWT\n");
       const signedVpJwt = fs.readFileSync(
         path.resolve(VP_DIR_PATH, `${camelCase(VP)}.jwt`),
         "utf8"
@@ -63,7 +63,7 @@ const verificationWithRevocationStatus = async () => {
     } catch (err) {
       console.log("\nFailed to fetch file\n");
       console.log(
-        "\nTo run this script you must have a valid VP and a vaild signed VP JWT\n"
+        "\nTo run this script you must have a valid VP and a valid signed VP JWT\n"
       );
       console.log(
         "\nPlease refer to issuer scripts to generate and sign a VP\n"
@@ -72,7 +72,7 @@ const verificationWithRevocationStatus = async () => {
   } else {
     console.log("\nVP not found!\n");
     console.log(
-      "\nTo run this script you must have a valid VP and a vaild signed VP JWT\n"
+      "\nTo run this script you must have a valid VP and a valid signed VP JWT\n"
     );
     console.log("\nPlease refer to issuer scripts to generate and sign a VP\n");
   }
