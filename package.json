@@ -26,7 +26,9 @@
     "verify": "ts-node ./src/verifier/verify.ts",
     "verify:dates": "ts-node ./src/verifier/verify-dates.ts",
     "verify:revocation:status": "ts-node ./src/verifier/verify-revocation-status.ts",
-    "verify:schema:validation": "ts-node ./src/verifier/verify-schema-validation.ts"
+    "verify:schema:validation": "ts-node ./src/verifier/verify-schema-validation.ts",
+    "claim": "ts-node ./src/hackathon-scripts/claim.ts",
+    "present": "ts-node ./src/hackathon-scripts/present-vc.ts"
   },
   "author": "",
   "devDependencies": {
@@ -41,6 +43,7 @@
     "@types/lodash": "^4.14.194",
     "dotenv": "^16.0.3",
     "ethers": "^5.7.2",
+    "jsontokens": "^4.0.1",
     "lodash": "^4.17.21"
   }
 }

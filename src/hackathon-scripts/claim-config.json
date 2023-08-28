@@ -1,0 +1,9 @@
+{
+    "token": "",
+    "issuer": "http://localhost:5999",
+    "web3": {
+        "web3HttpProvider": "https://rpc-mumbai.maticvigil.com/",
+        "didRegistryAddress": "0x33C695F89ab8F8f169fa652AD9a896C4e4AD34eb",
+        "name": "maticmum"
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "privateKey": "",
+    "vcs": [],
+    "verifierUrl": "http://localhost:4000",
+    "web3": {
+        "web3HttpProvider": "https://rpc-mumbai.maticvigil.com/",
+        "didRegistryAddress": "0x33C695F89ab8F8f169fa652AD9a896C4e4AD34eb",
+        "name": "maticmum"
+    }
+}

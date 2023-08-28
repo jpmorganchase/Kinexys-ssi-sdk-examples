@@ -22,6 +22,8 @@ logs/
 # production
 /dist
 dist/
+/build
+build/
 
 # IDEs and editors
 .idea/
@@ -36,7 +38,6 @@ dist/
 /jspm_packages/
 /bower_components/
 
-.env
 keys.json
 */verifiable_credentials/*
 */verifiable_presentation/*
