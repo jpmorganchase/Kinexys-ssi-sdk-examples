@@ -2,7 +2,7 @@
 Onyx is looking for exciting web2 and web3 use cases. To help get you started, we have provided:
 * Onyx Issuance Service to claim 2 types of Credentials
 * DIDRegistry (did:ethr) deployed on Polygon testnet
-* [Helper scripts](src/onyx-scripts) that facilitate the claiming and presenting of the Onyx VCs
+* [Helper scripts](src/hackathon-scripts) that facilitate the claiming and presenting of the Onyx VCs
 * [Sample verifier service](src/sample-verifier) to run locally
 
 ## Onyx Issuance Service
@@ -65,7 +65,7 @@ Now that you have claimed your VC, you can start building your solution. As a pa
 To demonstrate your use case we recommend you either simulate a Wallet with the given helper scripts or build a simple Web Wallet. 
 
 ### Simulate Wallet via Scripts
-This branch contains a [sample Verifier service](src/sample-verifier/) and a [present-vc](src/onyx-scripts/present-vc.ts) script. The script takes in your private key and the VC from the claim credential process. It will create a presentation for you and send it via http to a locally running Verifier service. You can build your use case off of the sample Verifier provided or write your own.
+This branch contains a [sample Verifier service](src/sample-verifier/) and a [present-vc](src/hackathon-scripts/present-vc.ts) script. The script takes in your private key and the VC from the claim credential process. It will create a presentation for you and send it via http to a locally running Verifier service. You can build your use case off of the sample Verifier provided or write your own.
 
 ### Build a Simple Web Wallet
 Instead of using scripts to simulate a Wallet flow, you have the option to build a simple Wallet service that interacts with your Verifier app.
