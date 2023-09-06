@@ -62,7 +62,7 @@ const createVcWithAdditonalParams = async (VC_SCHEMA_URL: string) => {
 
   if (validation) {
     console.log(
-      `\nGenerating Verifiable Cridential of type ${credentialType}\n`
+      `\nGenerating Verifiable Credential of type ${credentialType}\n`
     );
 
     const vc = await createCredentialFromSchema(

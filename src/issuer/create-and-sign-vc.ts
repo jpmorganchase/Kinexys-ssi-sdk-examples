@@ -34,7 +34,7 @@ const createVc = async () => {
   };
 
   console.log(
-    `\nGenerating a signed verifiable Cridential of type ${credentialType}\n`
+    `\nGenerating a signed verifiable Credential of type ${credentialType}\n`
   );
 
   const signedVc = await createAndSignCredentialJWT(

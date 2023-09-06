@@ -11,7 +11,7 @@ import { writeToFile } from "../utils/writer";
 const createVp = () => {
   if (VC) {
     try {
-      console.log("\nReading a existing signed VC JWT\n");
+      console.log("\nReading an existing signed VC JWT\n");
       const signedVcJwt = fs.readFileSync(
         path.resolve(VC_DIR_PATH, `${camelCase(VC)}.jwt`),
         "utf8"
@@ -30,7 +30,7 @@ const createVp = () => {
     } catch (err) {
       console.log("\nFailed to fetch file\n");
       console.log(
-        "\nTo run this script you must have a valid VC and a vaild signed VC JWT\n"
+        "\nTo run this script you must have a valid VC and a valid signed VC JWT\n"
       );
       console.log(
         "\nPlease refer to issuer scripts to generate and sign a VC\n"
@@ -39,7 +39,7 @@ const createVp = () => {
   } else {
     console.log("\nVC not found!\n");
     console.log(
-      "\nTo run this script you must have a valid VC and a vaild signed VC JWT\n"
+      "\nTo run this script you must have a valid VC and a valid signed VC JWT\n"
     );
     console.log("\nPlease refer to issuer scripts to generate and sign a VC\n");
   }
