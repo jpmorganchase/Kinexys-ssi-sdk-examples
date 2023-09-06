@@ -50,7 +50,7 @@ const signVp = async () => {
         );
       } else {
         console.log(
-          "HOLDER_ES256K_PRIVATE_KEY cannot sign this verifiable credentail\n"
+          "HOLDER_ES256K_PRIVATE_KEY cannot sign this verifiable presentation\n"
         );
       }
     } else if (includes(vp.holder, "key")) {
@@ -72,7 +72,7 @@ const signVp = async () => {
         );
       } else {
         console.log(
-          "\nHOLDER_EDDSA_PRIVATE_KEY cannot sign this verifiable credentail\n"
+          "\nHOLDER_EDDSA_PRIVATE_KEY cannot sign this verifiable presentation\n"
         );
       }
     }

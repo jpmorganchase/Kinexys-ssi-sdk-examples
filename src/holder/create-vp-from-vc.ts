@@ -1,13 +1,14 @@
-import { JWTService, createPresentation } from "@jpmorganchase/onyx-ssi-sdk";
+import {
+  createPresentation,
+  getSubjectFromVP,
+} from "@jpmorganchase/onyx-ssi-sdk";
 import fs from "fs";
 import { camelCase } from "lodash";
 import path from "path";
-import { JwtPayload, VC, VC_DIR_PATH, VP_DIR_PATH } from "../../config";
+import { VC, VC_DIR_PATH, VP_DIR_PATH } from "../../config";
 import { writeToFile } from "../utils/writer";
 
 const createVp = () => {
-  const jwtService = new JWTService();
-
   if (VC) {
     try {
       console.log("\nReading a existing signed VC JWT\n");
@@ -17,18 +18,15 @@ const createVp = () => {
       );
       console.log(signedVcJwt);
 
-      console.log("\nDecoding JWT to get VC\n");
-      const signedVc = jwtService.decodeJWT(signedVcJwt)?.payload as JwtPayload;
-      console.log(JSON.stringify(signedVc, null, 2));
+      console.log("\nGeting User from VC\n");
+      const holderDid = getSubjectFromVP(signedVcJwt);
+      console.log(holderDid);
 
       console.log("\nGenerating a VP\n");
-      const vp = createPresentation(signedVc.sub!, [signedVcJwt]);
+      const vp = createPresentation(holderDid!, [signedVcJwt]);
       console.log(vp);
 
-      writeToFile(
-        path.resolve(VP_DIR_PATH, `${camelCase(signedVc.vc.type[1])}.json`),
-        JSON.stringify(vp)
-      );
+      writeToFile(path.resolve(VP_DIR_PATH, `${VC}.json`), JSON.stringify(vp));
     } catch (err) {
       console.log("\nFailed to fetch file\n");
       console.log(
