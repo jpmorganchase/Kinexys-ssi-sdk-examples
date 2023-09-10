@@ -49,8 +49,8 @@ For Onyx issued Credentials, [did:ethr](https://github.com/jpmorganchase/onyx-ss
 1. Inform Encode of the Credential type you would like to claim
 2. Fork and clone this repo
 3. Run `npm install` at the root of the repo
-4. Navigate to `claim-config.json` and paste the OTP from Encode in the "token" field. The rest of the fields you will not need to modify.
-5. Run `npm run claim` which will print out your Credential represented as a JWT string
+4. Update `claim-config.json` in `src/hackathon-scripts`: paste the OTP from Encode in the "token" field. The rest of the fields you will not need to modify.
+5. Run `npm run claim` at the root of the repo which will print out your Credential represented as a JWT string
 6. The claim script will also print out your DID and associated key pair. Keep them and the Credential in a safe place.
 
 Sanity Checks: You can use this [site](https://jwt.io/) to decode your VC and perform sanity checks.
