@@ -6,11 +6,11 @@ Onyx is looking for exciting web2 and web3 use cases. To help get you started, w
 * [Sample verifier service](src/sample-verifier) to run locally
 
 ## Onyx Issuance Service
-Onyx has deployed a service to issue 2 Credential types to Hackathon participants. The official Onyx DID for the Hackathon is: did:ethr:maticmum:0x506bddCD71F100B32419Ff8aDEeCB0Bc30D13855
+Onyx has deployed a service to issue 2 Credential types to Hackathon participants. The official Onyx DID for the Hackathon is:
 
-For intereseted participants, Encode will send an OTP token to be used for claiming an Onyx Credential. This repo contains a claim script that can be used to claim the Onyx Credential. Once the token has been used and the Credential claimed, the token can no longer be used. Please keep your claimed Credentials in a safe location!
+For interested participants, Encode will send an OTP token to be used for claiming an Onyx Credential. This repo contains a claim script that can be used to claim the Onyx Credential. Once the token has been used and the Credential claimed, the token can no longer be used. Please keep your claimed Credentials in a safe location!
 
-Each group can claim a maximum of **** Credentials of the same type.
+Each group can claim a maximum of 2 Credentials of the same type, one for testing/development and one for demo.
 
 ### Onyx Credential Types
 Onyx is issuing 2 Credential types as a part of this Hackathon. In your request to Encode, please specify which Credential type you would like to claim. The claims in these Credentials are hardcoded and contain dummy data.
@@ -26,8 +26,6 @@ VerifiedCustomer contains one claim:
 ```
 The Schema for this Credential is [here](https://github.com/jpmorganchase/onyx-ssi-sdk/blob/main/src/services/common/schemas/definitions/verifiedCustomer.json)
 
-Possible use cases for VerifiedCustomer include:
-
 #### BalanceCredential
 
 BalanceCredential contains 2 claims:
@@ -39,8 +37,6 @@ BalanceCredential contains 2 claims:
 }
 ```
 The Schema for this Credential is [here](https://github.com/jpmorganchase/onyx-ssi-sdk/blob/main/src/services/common/schemas/definitions/balanceCredential.json)
-
-Possible use cases for BalanceCredential include:
 
 ### DIDRegistry
 For Onyx issued Credentials, [did:ethr](https://github.com/jpmorganchase/onyx-ssi-sdk/tree/main/src/services/common/did#didethr) will be used. The DIDRegistry for did:ethr used in this hackathon is deployed at address: 0x33C695F89ab8F8f169fa652AD9a896C4e4AD34eb. This is where your DIDs will be registered during the claiming process. If you would like to use a different DID method as your subject DID, you may modify the claim script from this repo.
