@@ -50,7 +50,7 @@ For Onyx issued Credentials, [did:ethr](https://github.com/jpmorganchase/onyx-ss
 6. The claim script will also print out your DID and associated key pair. Keep them and the Credential in a safe place.
 
 Sanity Checks: You can use this [site](https://jwt.io/) to decode your VC and perform sanity checks.
-* The issuer did in the VC should be `did:ethr:maticmum:0x506bddCD71F100B32419Ff8aDEeCB0Bc30D13855` 
+* The issuer did in the VC should be `did:ethr:maticmum:0xe69dCf89f850b566a6547c059d2315f7a6eF02Ca`
 * The subject did in the VC should match the output of the claim script
 * The `credentialSubject` should be populated with the above Dummy data. 
 * The VC should contain a type of either `VerifiedCustomer` or `BalanceCredential`
