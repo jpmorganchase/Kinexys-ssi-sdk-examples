@@ -6,7 +6,7 @@ Onyx is looking for exciting web2 and web3 use cases. To help get you started, w
 * [Sample verifier service](src/sample-verifier) to run locally
 
 ## Onyx Issuance Service
-Onyx has deployed a service to issue 2 Credential types to Hackathon participants. The official Onyx DID for the Hackathon is:
+Onyx has deployed a service to issue 2 Credential types to Hackathon participants. The official Onyx DID for the Hackathon is: `did:ethr:maticmum:0xe69dCf89f850b566a6547c059d2315f7a6eF02Ca`
 
 For interested participants, Encode will send an OTP token to be used for claiming an Onyx Credential. This repo contains a claim script that can be used to claim the Onyx Credential. Once the token has been used and the Credential claimed, the token can no longer be used. Please keep your claimed Credentials in a safe location!
 
