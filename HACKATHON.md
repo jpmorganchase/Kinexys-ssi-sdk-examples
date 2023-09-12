@@ -39,7 +39,7 @@ BalanceCredential contains 2 claims:
 The Schema for this Credential is [here](https://github.com/jpmorganchase/onyx-ssi-sdk/blob/main/src/services/common/schemas/definitions/balanceCredential.json)
 
 ### DIDRegistry
-For Onyx issued Credentials, [did:ethr](https://github.com/jpmorganchase/onyx-ssi-sdk/tree/main/src/services/common/did#didethr) will be used. The DIDRegistry for did:ethr used in this hackathon is deployed at address: 0x33C695F89ab8F8f169fa652AD9a896C4e4AD34eb. This is where your DIDs will be registered during the claiming process. If you would like to use a different DID method as your subject DID, you may modify the claim script from this repo.
+For Onyx issued Credentials, [did:ethr](https://github.com/jpmorganchase/onyx-ssi-sdk/tree/main/src/services/common/did#didethr) will be used. The DIDRegistry for did:ethr used in this hackathon is deployed at address on Polygon testnet: 0x33C695F89ab8F8f169fa652AD9a896C4e4AD34eb. This is where your DIDs will be registered during the claiming process. You will need testnet matic if you would like to update or deactivate your DIDs. Please use the testnet faucets, but if you need more you can reach out to Encode. If you would like to use a different DID method as your subject DID, you may modify the claim script from this repo. 
 
 ### How to Claim a Credential
 1. Inform Encode of the Credential type you would like to claim
