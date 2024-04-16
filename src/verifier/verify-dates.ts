@@ -1,9 +1,6 @@
 import {
-  EthrDIDMethod,
   JWTService,
-  KeyDIDMethod,
   getCredentialsFromVP,
-  getSupportedResolvers,
   verifyCredentialJWT,
   verifyDID,
   verifyPresentationJWT,
@@ -11,15 +8,14 @@ import {
 import fs from "fs";
 import { camelCase } from "lodash";
 import path from "path";
-import { JwtPayload, VP, VP_DIR_PATH, ethrProvider } from "../../config";
+import { JwtPayload, VP, VP_DIR_PATH } from "../../config";
+import { createDidResolver } from "../utils/resolver";
 
-const didKey = new KeyDIDMethod();
-const didEthr = new EthrDIDMethod(ethrProvider);
 const jwtService = new JWTService();
 
 const verificationWithDates = async () => {
   // Instantiating the didResolver
-  const didResolver = getSupportedResolvers([didKey, didEthr]);
+  const { didResolver } = createDidResolver();
 
   if (VP) {
     try {

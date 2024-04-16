@@ -1,24 +1,17 @@
 import {
-  EthrDIDMethod,
-  JWTService,
-  KeyDIDMethod,
   getCredentialsFromVP,
-  getSupportedResolvers,
   verifyDIDs,
   verifyPresentationJWT,
 } from "@jpmorganchase/onyx-ssi-sdk";
 import fs from "fs";
 import { camelCase } from "lodash";
 import path from "path";
-import { VP, VP_DIR_PATH, ethrProvider } from "../../config";
-
-const didKey = new KeyDIDMethod();
-const didEthr = new EthrDIDMethod(ethrProvider);
-const jwtService = new JWTService();
+import { VP, VP_DIR_PATH } from "../../config";
+import { createDidResolver } from "../utils/resolver";
 
 const verification = async () => {
   // Instantiating the didResolver
-  const didResolver = getSupportedResolvers([didKey, didEthr]);
+  const { didResolver } = createDidResolver();
 
   if (VP) {
     try {

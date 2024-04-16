@@ -45,6 +45,10 @@ export const VP_DIR_PATH =
   getParam("VP_DIR_PATH") || "./src/verifiable_presentation";
 export const VP = getParam("VP");
 
+//Vidos config
+export const VIDOS_RESOLVER_URL = getParam("VIDOS_RESOLVER_URL");
+export const VIDOS_API_KEY = getParam("VIDOS_API_KEY");
+
 export const provider = new ethers.providers.JsonRpcProvider(NETWORK_RPC_URL!);
 export const ethrProvider = {
   name: NETWORK_NAME!,
