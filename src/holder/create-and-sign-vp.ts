@@ -3,7 +3,7 @@ import {
   KeyDIDMethod,
   createAndSignPresentationJWT,
   getSubjectFromVP,
-} from "@jpmorganchase/onyx-ssi-sdk";
+} from "@jpmorganchase/Kinexys-ssi-sdk";
 import fs from "fs";
 import { camelCase, includes } from "lodash";
 import path from "path";

@@ -1,4 +1,4 @@
-import { KEY_ALG, KeyPair } from "@jpmorganchase/onyx-ssi-sdk";
+import { KEY_ALG, KeyPair } from "@jpmorganchase/Kinexys-ssi-sdk";
 import * as ed25519 from "@stablelib/ed25519";
 import { randomBytes } from "crypto";
 import { Wallet, ethers } from "ethers";

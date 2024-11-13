@@ -1,7 +1,7 @@
 import {
   createPresentation,
   getSubjectFromVP,
-} from "@jpmorganchase/onyx-ssi-sdk";
+} from "@jpmorganchase/Kinexys-ssi-sdk";
 import fs from "fs";
 import { camelCase } from "lodash";
 import path from "path";

@@ -1,10 +1,10 @@
-# Onyx SSI SDK Examples Repository
+# Kinexys SSI SDK Examples Repository
 
 ## Introduction
 
-This repository contains a set of comprehensive typescript code examples to demonstrate the capabilities of the [Onyx SSI SDK](https://github.com/jpmorganchase/onyx-ssi-sdk). Each script focuses on a specific function of the SDK.
+This repository contains a set of comprehensive typescript code examples to demonstrate the capabilities of the [Kinexys SSI SDK](https://github.com/jpmorganchase/Kinexys-ssi-sdk). Each script focuses on a specific function of the SDK.
 
-This repository can also be used as self-help guide for developers who aspire to build their own use-cases using Onyx SSI SDK.
+This repository can also be used as self-help guide for developers who aspire to build their own use-cases using Kinexys SSI SDK.
 
 ## Features
 
@@ -12,13 +12,13 @@ This examples repository covers three important roles in Decentralized Identity:
 
 ### Issuer
 
-The Issuer plays a crucial role in issuing verifiable credentials (VC) to entities. The scripts demonstrate how to effectively utilize the Onyx SSI SDK to carry out all tasks related to the Issuer. This includes creating a DID (Decentralized Identifier) for the Issuer, generating and signing Verifiable Credentials.
+The Issuer plays a crucial role in issuing verifiable credentials (VC) to entities. The scripts demonstrate how to effectively utilize the Kinexys SSI SDK to carry out all tasks related to the Issuer. This includes creating a DID (Decentralized Identifier) for the Issuer, generating and signing Verifiable Credentials.
 
 Within the issuer section, you'll find a schema section that defines the structure for the subject data of the verifiable credential. This directory allows you to experiment and create custom schema types tailored to your specific requirements. As part of this examples repository, we have included a pre-defined `proofOfName` schema.
 
 ### Holder
 
-The Holder is the entity who claims, shares, and manages their Verifiable Credentials. The examples showcase how the Onyx SSI SDK can be leveraged from the Holder's perspective. Developers will learn how to create a DID, generate Verifiable Presentations (VP) with their desired Credentials, and digitally sign the Presentation for identity verification.
+The Holder is the entity who claims, shares, and manages their Verifiable Credentials. The examples showcase how the Kinexys SSI SDK can be leveraged from the Holder's perspective. Developers will learn how to create a DID, generate Verifiable Presentations (VP) with their desired Credentials, and digitally sign the Presentation for identity verification.
 
 ### Verifier
 
@@ -28,11 +28,11 @@ The Verifier is an entity seeking to validate claims that a Holder presents. The
 
 This repository also demonstrates integrating the SDK into an end-to-end SSI ecosystem, enabling developers to customize digital identity solutions.
 
-With the Onyx SSI SDK and these examples, you'll be equipped to develop robust and interoperable SSI solutions, enhancing digital identity management across diverse applications and industries.
+With the Kinexys SSI SDK and these examples, you'll be equipped to develop robust and interoperable SSI solutions, enhancing digital identity management across diverse applications and industries.
 
 ### Disclaimer
 
-Note that this repository emphasizes exemplary usage of the Onyx SSI SDK for development purposes. For production-grade use cases, consider additional parameters to ensure the utmost safety and security of your SSI solution. Exercise caution and adopt best practices when deploying SSI solutions in live environments.
+Note that this repository emphasizes exemplary usage of the Kinexys SSI SDK for development purposes. For production-grade use cases, consider additional parameters to ensure the utmost safety and security of your SSI solution. Exercise caution and adopt best practices when deploying SSI solutions in live environments.
 
 ## Prerequisites
 
@@ -41,7 +41,7 @@ To run the examples in this repository, you need:
 - Node.js v16 or higher installed on your system.
 - A basic understanding of TypeScript.
 - A configured `.env` file. You'll find a `.env.example` in the root of this project, which outlines the necessary environment variables.
-- Optional but highly encouraged to get familiar with [Onyx SSI SDK](https://github.com/jpmorganchase/onyx-ssi-sdk) and the broader SSI Ecosystem.
+- Optional but highly encouraged to get familiar with [Kinexys SSI SDK](https://github.com/jpmorganchase/Kinexys-ssi-sdk) and the broader SSI Ecosystem.
 
 ## Getting Started
 
@@ -50,7 +50,7 @@ To run the examples in this repository, you need:
    Use the following command to clone this repository to your local machine:
 
    ```
-   git clone https://github.com/jpmorganchase/onyx-ssi-sdk-examples
+   git clone https://github.com/jpmorganchase/Kinexys-ssi-sdk-examples
    ```
 
 2. **Navigate to the Directory**
@@ -58,7 +58,7 @@ To run the examples in this repository, you need:
    Enter the root directory of the cloned repository with:
 
    ```
-   cd onyx-ssi-sdk-examples
+   cd Kinexys-ssi-sdk-examples
    ```
 
 3. **Configure Environment Variables**
@@ -75,14 +75,14 @@ To run the examples in this repository, you need:
 
 ## Repository Structure
 
-- `src/`: This directory is the root of the examples repository and contains three subdirectories: `holder`, `issuer`, and `verifier`. Each subdirectory houses TypeScript scripts showcasing specific functionalities of the Onyx SSI SDK, corresponding to the respective roles.
+- `src/`: This directory is the root of the examples repository and contains three subdirectories: `holder`, `issuer`, and `verifier`. Each subdirectory houses TypeScript scripts showcasing specific functionalities of the Kinexys SSI SDK, corresponding to the respective roles.
 - `src/utils/`: In this directory, you will find various helper scripts that facilitate the implementation of the examples within this repository. These utility scripts streamline certain processes and enhance the overall development experience.
 - `src/verifiable_credentials/`: This directory serves as the default storage location for all verifiable credentials generated by the issuer scripts. If needed, you can modify the storage location for these credentials by updating the .env file.
 - `src/verifiable_presentation/`: Similar to the verifiable_credentials directory, this folder acts as the default storage location for all verifiable presentations generated by the holder scripts. If necessary, you can adjust the storage location for these presentations in the .env file.
 
 ## Usage
 
-Navigating the usage of this examples repository is simple and straightforward. Follow these steps to get familiar with the Onyx SSI SDK functionalities:
+Navigating the usage of this examples repository is simple and straightforward. Follow these steps to get familiar with the Kinexys SSI SDK functionalities:
 
 1. Start from the Issuer section:
 
@@ -127,4 +127,4 @@ This project is licensed under the [Your License Name]. Please refer to the `LIC
 
 <br>
 
-We trust these examples will help you effectively utilize Onyx SSI SDK for your projects. Happy coding!
+We trust these examples will help you effectively utilize Kinexys SSI SDK for your projects. Happy coding!

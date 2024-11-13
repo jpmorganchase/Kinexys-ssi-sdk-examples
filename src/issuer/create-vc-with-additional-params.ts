@@ -3,7 +3,7 @@ import {
   KeyDIDMethod,
   SchemaManager,
   createCredentialFromSchema,
-} from "@jpmorganchase/onyx-ssi-sdk";
+} from "@jpmorganchase/Kinexys-ssi-sdk";
 import { camelCase } from "lodash";
 import path from "path";
 import {

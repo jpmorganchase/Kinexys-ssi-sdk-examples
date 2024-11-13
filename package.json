@@ -1,11 +1,11 @@
 {
-  "name": "@jpmorganchase/onyx-ssi-sdk-examples",
+  "name": "@jpmorganchase/Kinexys-ssi-sdk-examples",
   "version": "0.0.1",
-  "description": "This repo has running code which you can execute to help you understand how to use the onyx-ssi-sdk.",
+  "description": "This repo has running code which you can execute to help you understand how to use the Kinexys-ssi-sdk.",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jpmorganchase/onyx-ssi-sdk-examples"
+    "url": "https://github.com/jpmorganchase/Kinexys-ssi-sdk-examples"
   },
   "scripts": {
     "create:issuer:did:key": "ts-node ./src/issuer/create-issuer-did-key.ts",
@@ -36,7 +36,7 @@
     "typescript": "^5.0.4"
   },
   "dependencies": {
-    "@jpmorganchase/onyx-ssi-sdk": "^0.0.1",
+    "@jpmorganchase/Kinexys-ssi-sdk": "^0.0.1",
     "@types/lodash": "^4.14.194",
     "dotenv": "^16.0.3",
     "ethers": "^5.7.2",

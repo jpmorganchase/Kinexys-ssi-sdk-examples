@@ -1,4 +1,4 @@
-import { DIDWithKeys, EthrDIDMethod } from "@jpmorganchase/onyx-ssi-sdk";
+import { DIDWithKeys, EthrDIDMethod } from "@jpmorganchase/Kinexys-ssi-sdk";
 import { ISSUER_ES256K_PRIVATE_KEY, ethrProvider } from "../../config";
 
 const createDidEthrFromPrivateKey = async () => {

@@ -1,4 +1,4 @@
-import { KeyDIDMethod, SchemaManager, createCredential } from "@jpmorganchase/onyx-ssi-sdk";
+import { KeyDIDMethod, SchemaManager, createCredential } from "@jpmorganchase/Kinexys-ssi-sdk";
 import { camelCase } from "lodash";
 import path from "path";
 import {

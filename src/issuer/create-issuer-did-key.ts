@@ -1,4 +1,4 @@
-import { DIDWithKeys, KeyDIDMethod } from "@jpmorganchase/onyx-ssi-sdk";
+import { DIDWithKeys, KeyDIDMethod } from "@jpmorganchase/Kinexys-ssi-sdk";
 import { ISSUER_EDDSA_PRIVATE_KEY } from "../../config";
 import { privateKeyBufferFromString } from "../utils/convertions";
 

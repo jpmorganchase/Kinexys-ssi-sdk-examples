@@ -1,4 +1,4 @@
-import { KeyDIDMethod, createAndSignCredentialJWT } from "@jpmorganchase/onyx-ssi-sdk";
+import { KeyDIDMethod, createAndSignCredentialJWT } from "@jpmorganchase/Kinexys-ssi-sdk";
 import { camelCase } from "lodash";
 import path from "path";
 import {

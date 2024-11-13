@@ -1,4 +1,4 @@
-import { EthrDIDMethod, createCredential } from "@jpmorganchase/onyx-ssi-sdk";
+import { EthrDIDMethod, createCredential } from "@jpmorganchase/Kinexys-ssi-sdk";
 import {
   HOLDER_ES256K_PRIVATE_KEY,
   ISSUER_ES256K_PRIVATE_KEY,
